@@ -50,7 +50,7 @@ class AppDatabase {
             )
             ''');
 
-    // //- two screen -------------------------------------
+    //- two screen -------------------------------------
     batch.execute('''
         CREATE TABLE packages (
           id INTEGER PRIMARY KEY AUTOINCREMENT,

@@ -12,7 +12,7 @@ class BuildCustomOfferBox extends StatelessWidget {
       decoration: BoxDecoration(
         color: Color(0xffF7F7F7),
         borderRadius: BorderRadius.all(Radius.circular(8)),
-        border: Border.all(color: Colors.black.withValues(alpha: .05)),
+        border: Border.all(color: AppColors.kTextBlack.withValues(alpha: .05)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),

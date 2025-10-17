@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_task/core/utils/widgets/build_button.dart';
 import 'package:flutter_task/feature/package/presentation/manger/package_cubit/package_cubit.dart';
 import 'package:go_router/go_router.dart';
+import '../../../../../core/color/app_colors.dart';
 import '../../../../../core/routers/app_routes.dart';
 import 'build_custom_offer_box.dart';
 import 'build_header_section.dart';
@@ -50,7 +51,7 @@ class PackageViewBody extends StatelessWidget {
               SliverToBoxAdapter(
                 child: Divider(
                   height: 1,
-                  color: Colors.black.withValues(alpha: 0.1),
+                  color: AppColors.kTextBlack.withValues(alpha: 0.1),
                   thickness: 1,
                 ),
               ),

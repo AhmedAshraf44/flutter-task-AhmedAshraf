@@ -4,7 +4,6 @@ import '../../../feature/home/data/models/category_model.dart';
 import '../../../feature/home/data/models/product_model.dart';
 
 class HomeDao {
-  // ======= CATEGORY =======
   Future<void> insertCategories(List<CategoryModel> categories) async {
     final db = await AppDatabase.database;
     final batch = db.batch();
@@ -24,7 +23,6 @@ class HomeDao {
         .toList();
   }
 
-  // ======= SELECTION =======
   Future<void> insertSelections(List<CategoryModel> selections) async {
     final db = await AppDatabase.database;
     final batch = db.batch();
@@ -50,7 +48,6 @@ class HomeDao {
         .toList();
   }
 
-  // ======= PRODUCTS =======
   Future<void> insertProducts(List<ProductModel> products) async {
     final db = await AppDatabase.database;
     final batch = db.batch();

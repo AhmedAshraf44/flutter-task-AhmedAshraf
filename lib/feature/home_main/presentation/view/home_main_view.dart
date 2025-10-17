@@ -19,9 +19,9 @@ class HomeMainParentView extends StatelessWidget {
             body: cubit.pages[cubit.currentIndex],
             bottomNavigationBar: Container(
               decoration: BoxDecoration(
-                color: AppColors.kPrimaryColor,
+                color: AppColors.kTextWhite,
                 border: Border.all(
-                  color: Colors.black.withValues(alpha: 0.1),
+                  color: AppColors.kTextBlack.withValues(alpha: 0.1),
                   width: 1,
                 ),
               ),

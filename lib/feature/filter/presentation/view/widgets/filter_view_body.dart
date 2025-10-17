@@ -98,7 +98,7 @@ class BuildFilterSection extends StatelessWidget {
             Text(
               option.title,
               style: AppStyles.textStyle16Medium.copyWith(
-                color: Colors.black.withValues(alpha: 0.5),
+                color: AppColors.kTextBlack.withValues(alpha: 0.5),
               ),
             ),
             const SizedBox(height: 12),

@@ -4,6 +4,6 @@ import '../color/app_colors.dart';
 ThemeData getTheme() {
   return ThemeData(
     fontFamily: 'Tajawal',
-    scaffoldBackgroundColor: AppColors.kPrimaryColor,
+    scaffoldBackgroundColor: AppColors.kTextWhite,
   );
 }

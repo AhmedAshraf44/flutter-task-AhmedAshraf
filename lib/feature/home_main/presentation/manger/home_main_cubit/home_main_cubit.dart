@@ -1,4 +1,3 @@
-// home_main_cubit.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_task/feature/add/presentation/view/add_view.dart';

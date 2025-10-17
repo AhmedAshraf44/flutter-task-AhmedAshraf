@@ -29,7 +29,7 @@ class FilterChipWidget extends StatelessWidget {
           border: Border.all(
             color: isSelected
                 ? AppColors.kTextTertiary
-                : Colors.black.withValues(alpha: 0.1),
+                : AppColors.kTextBlack.withValues(alpha: 0.1),
             width: isSelected ? 2.0 : 1.0,
           ),
         ),

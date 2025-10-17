@@ -34,9 +34,4 @@ class FilterCubit extends Cubit<FilterState> {
       emit(FilterFailureState(e.toString()));
     }
   }
-
-  // Future<void> deleteFilter(String title) async {
-  //   await _repo.deleteFilter(title);
-  //   await loadFilters();
-  // }
 }

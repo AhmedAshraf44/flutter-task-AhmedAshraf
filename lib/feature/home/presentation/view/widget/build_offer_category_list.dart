@@ -39,7 +39,9 @@ class _BuildOfferCategoryListState extends State<BuildOfferCategoryList> {
                 color: isSelected
                     ? AppColors.kTextSecondary.withValues(alpha: 0.05)
                     : AppColors.kTextWhite.withValues(alpha: 0.3),
-                border: Border.all(color: Colors.black.withValues(alpha: 0.1)),
+                border: Border.all(
+                  color: AppColors.kTextBlack.withValues(alpha: 0.1),
+                ),
                 borderRadius: BorderRadius.circular(4),
               ),
               child: Text(

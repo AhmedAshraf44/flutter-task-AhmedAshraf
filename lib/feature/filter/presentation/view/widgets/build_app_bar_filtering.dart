@@ -26,7 +26,6 @@ class BuildAppBarFiltering extends StatelessWidget {
                   ),
                 ),
               ),
-              // const SizedBox(width: 12),
               Text('فلترة', style: AppStyles.textStyle24Medium),
             ],
           ),

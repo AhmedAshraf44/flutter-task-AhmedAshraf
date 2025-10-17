@@ -30,7 +30,6 @@ class PackageModel {
       id: 1,
       name: 'أساسية',
       price: 3000,
-
       features: [
         PackageFeatureModel(
           title: 'صلاحية الأعلان 30 يوم',
@@ -53,7 +52,7 @@ class PackageModel {
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
-          title: 'رفع إعلانين كل 3 أيام',
+          title: 'رفع لأعلى القائمة كل 3 أيام',
           image: Assets.imagesRocket,
           stickyDurationHours: '',
         ),
@@ -80,7 +79,7 @@ class PackageModel {
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
-          title: 'رفع إعلانين كل 3 أيام',
+          title: 'رفع لأعلى القائمة كل 2 يوم',
           image: Assets.imagesRocket,
           stickyDurationHours: '',
         ),
@@ -127,7 +126,7 @@ class PackageModel {
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
-          title: 'رفع إعلانين كل 3 أيام',
+          title: 'رفع لأعلى القائمة كل 2 يوم',
           image: Assets.imagesRocket,
           stickyDurationHours: '',
         ),

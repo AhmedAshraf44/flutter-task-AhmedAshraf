@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task/feature/filter/presentation/view/widgets/build_number_field.dart';
+import '../../../../../core/color/app_colors.dart';
 import '../../../../../core/style/app_styles.dart';
 
 class RangeInputSection extends StatelessWidget {
@@ -34,7 +35,7 @@ class RangeInputSection extends StatelessWidget {
           Text(
             title,
             style: AppStyles.textStyle16Medium.copyWith(
-              color: Colors.black.withValues(alpha: 0.5),
+              color: AppColors.kTextBlack.withValues(alpha: 0.5),
             ),
           ),
           const SizedBox(height: 12),

@@ -22,7 +22,7 @@ class BuildLocationSection extends StatelessWidget {
               Text(
                 'مصر',
                 style: AppStyles.textStyle12Regular.copyWith(
-                  color: Colors.black.withValues(alpha: 0.5),
+                  color: AppColors.kTextBlack.withValues(alpha: 0.5),
                 ),
               ),
             ],

@@ -77,9 +77,6 @@ class PackageDao {
 
   Future<void> updateSelection(int packageId, bool isSelected) async {
     final db = await AppDatabase.database;
-
-    // await db.update('packages', {'isSelected': 0});
-
     await db.update(
       'packages',
       {'isSelected': isSelected ? 1 : 0},

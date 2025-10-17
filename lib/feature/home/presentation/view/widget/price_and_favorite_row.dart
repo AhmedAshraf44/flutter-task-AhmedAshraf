@@ -33,9 +33,9 @@ class PriceAndFavoriteRow extends StatelessWidget {
                 ',$oldPrice',
                 style: AppStyles.textStyle14Medium.copyWith(
                   inherit: false,
-                  color: Colors.black.withValues(alpha: 0.5),
+                  color: AppColors.kTextBlack.withValues(alpha: 0.5),
                   decoration: TextDecoration.lineThrough,
-                  decorationColor: Colors.black.withValues(alpha: 0.5),
+                  decorationColor: AppColors.kTextBlack.withValues(alpha: 0.5),
                 ),
               ),
             ],

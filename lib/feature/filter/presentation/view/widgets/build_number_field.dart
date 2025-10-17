@@ -17,15 +17,15 @@ class BuildNumberField extends StatelessWidget {
     return TextField(
       controller: controller,
       keyboardType: TextInputType.number,
-      textAlign: TextAlign.center,
+      //  textAlign: TextAlign.center,
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
         hintText: hintText,
         hintStyle: AppStyles.textStyle14Medium.copyWith(
           color: AppColors.kTextPrimary.withValues(alpha: 0.5),
         ),
-        border: border(Colors.black.withValues(alpha: 0.1)),
-        enabledBorder: border(Colors.black.withValues(alpha: 0.1)),
+        border: border(AppColors.kTextBlack.withValues(alpha: 0.1)),
+        enabledBorder: border(AppColors.kTextBlack.withValues(alpha: 0.1)),
         focusedBorder: border(AppColors.kTextTertiary),
       ),
     );

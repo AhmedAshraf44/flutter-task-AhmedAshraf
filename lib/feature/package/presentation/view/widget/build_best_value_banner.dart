@@ -40,7 +40,7 @@ class BuildBestValueBanner extends StatelessWidget {
 class _BannerCutPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint()..color = const Color(0xFFFEE8E8);
+    final paint = Paint()..color = const Color(0xFFFFDBDB);
 
     final path = Path()
       ..moveTo(0, 0)

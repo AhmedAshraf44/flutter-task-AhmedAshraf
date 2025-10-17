@@ -18,7 +18,7 @@ class BuildCategorySection extends StatelessWidget {
           Text(
             'الفئة',
             style: AppStyles.textStyle16Medium.copyWith(
-              color: Colors.black.withValues(alpha: 0.5),
+              color: AppColors.kTextBlack.withValues(alpha: 0.5),
             ),
           ),
           const SizedBox(height: 12),
@@ -40,7 +40,7 @@ class BuildCategorySection extends StatelessWidget {
                   Text(
                     'فلل البيع',
                     style: AppStyles.textStyle12Regular.copyWith(
-                      color: Colors.black.withValues(alpha: 0.5),
+                      color: AppColors.kTextBlack.withValues(alpha: 0.5),
                     ),
                   ),
                 ],

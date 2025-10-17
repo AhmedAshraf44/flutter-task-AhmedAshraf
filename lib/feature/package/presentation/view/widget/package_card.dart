@@ -18,7 +18,9 @@ class PackageCard extends StatelessWidget {
           decoration: BoxDecoration(
             color: AppColors.kTextWhite,
             borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: Colors.black.withValues(alpha: .1)),
+            border: Border.all(
+              color: AppColors.kTextBlack.withValues(alpha: .1),
+            ),
             boxShadow: [
               BoxShadow(
                 color: AppColors.kTextPrimary.withValues(alpha: .04),
@@ -33,7 +35,10 @@ class PackageCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               BuildPackageHeader(package: package),
-              Divider(color: Colors.black.withValues(alpha: 0.1), height: 24),
+              Divider(
+                color: AppColors.kTextBlack.withValues(alpha: 0.1),
+                height: 24,
+              ),
               BuildPackageDetails(package: package),
             ],
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/color/app_colors.dart';
 import '../../../../../core/style/app_styles.dart';
 import '../../../../../core/utils/assets.dart';
 
@@ -21,7 +22,7 @@ class BuildAppBarHome extends StatelessWidget {
                 Text(
                   'الكل',
                   style: AppStyles.textStyle16Bold.copyWith(
-                    color: Colors.black.withValues(alpha: 0.5),
+                    color: AppColors.kTextBlack.withValues(alpha: 0.5),
                   ),
                 ),
                 SizedBox(width: 8),

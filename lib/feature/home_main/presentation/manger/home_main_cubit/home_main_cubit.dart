@@ -5,9 +5,9 @@ import 'package:flutter_task/feature/add/presentation/view/add_view.dart';
 import 'package:flutter_task/feature/advertising/presentation/view/advertising_view.dart';
 import 'package:flutter_task/feature/chat/presentation/view/chat_view.dart';
 import 'package:flutter_task/feature/home_main/data/nav_bar_model.dart';
-import 'package:flutter_task/feature/profile/presentation/view/profile_view.dart';
 import '../../../../../core/utils/assets.dart';
 import '../../../../home/presentation/view/home_view.dart';
+import '../../../../profile/presentation/view/profile_view.dart';
 part 'home_main_state.dart';
 
 class HomeMainCubit extends Cubit<HomeMainState> {

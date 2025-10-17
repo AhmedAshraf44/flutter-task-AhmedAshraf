@@ -1,5 +1,4 @@
 import 'package:bloc/bloc.dart';
-import 'package:meta/meta.dart';
 import '../../../data/models/category_model.dart';
 import '../../../data/models/product_model.dart';
 import '../../../data/repo/home_repo_imple.dart';
@@ -7,12 +6,14 @@ import '../../../data/repo/home_repo_imple.dart';
 part 'home_state.dart';
 
 class HomeCubit extends Cubit<HomeState> {
-  HomeCubit() : super(HomeInitialState());
+  HomeCubit(this._repo) : super(HomeInitialState());
 
-  final HomeRepoImpl _repo = HomeRepoImpl();
+  final HomeRepoImpl _repo;
 
-  Future<void> loadHomeData() async {
-    emit(HomeLoadingState());
+  Future<void> loadHomeData({bool isloading = true}) async {
+    if (isloading) {
+      emit(HomeLoadingState());
+    }
     try {
       await _repo.seedData();
       final categories = await _repo.getCategories();
@@ -28,5 +29,10 @@ class HomeCubit extends Cubit<HomeState> {
     } catch (e) {
       emit(HomeFailureState(e.toString()));
     }
+  }
+
+  Future<void> toggleFavorite(ProductModel product) async {
+    await _repo.updateFavoriteStatus(product);
+    await loadHomeData(isloading: false);
   }
 }

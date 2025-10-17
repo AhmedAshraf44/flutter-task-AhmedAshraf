@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
-import 'widget/profile_view_body.dart';
+
+import '../../../../core/style/app_styles.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SafeArea(child: ProfileViewBody()));
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: const [
+        Center(child: Text('Profile View', style: AppStyles.textStyle16Bold)),
+      ],
+    );
   }
 }

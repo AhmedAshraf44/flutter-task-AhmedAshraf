@@ -9,13 +9,12 @@ class AppDatabase {
 
     _db = await openDatabase(
       'AppData.db',
-      version: 2,
+      version: 4,
       onCreate: (db, version) async {
         log("Creating tables...");
         await _createTables(db);
         log("✅ Database & Tables created successfully");
       },
-
       onUpgrade: (db, oldVersion, newVersion) async {
         log("⚙️ Upgrading database from $oldVersion to $newVersion");
         await db.execute('DROP TABLE IF EXISTS filter_options');
@@ -27,7 +26,6 @@ class AppDatabase {
         await _createTables(db);
       },
     );
-
     return _db!;
   }
 
@@ -53,29 +51,29 @@ class AppDatabase {
             ''');
 
     // //- two screen -------------------------------------
-    // batch.execute('''
-    //     CREATE TABLE packages (
-    //       id INTEGER PRIMARY KEY AUTOINCREMENT,
-    //       name TEXT,
-    //       price REAL,
-    //       numberOfViews TEXT,
-    //       bestValue TEXT,
-    //       isSelected INTEGER,
-    //       isBestValue INTEGER,
-    //       isSelectednumberOfViews INTEGER
-    //     )
-    //   ''');
+    batch.execute('''
+        CREATE TABLE packages (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          name TEXT,
+          price REAL,
+          numberOfViews TEXT,
+          bestValue TEXT,
+          isSelected INTEGER,
+          isBestValue INTEGER,
+          isSelectednumberOfViews INTEGER
+        )
+      ''');
 
-    // batch.execute('''
-    //     CREATE TABLE package_features (
-    //       id INTEGER PRIMARY KEY AUTOINCREMENT,
-    //       packageId INTEGER,
-    //       title TEXT,
-    //       image TEXT,
-    //       stickyDurationHours TEXT,
-    //       FOREIGN KEY (packageId) REFERENCES packages(id) ON DELETE CASCADE
-    //     )
-    //   ''');
+    batch.execute('''
+        CREATE TABLE package_features (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          packageId INTEGER,
+          title TEXT,
+          image TEXT,
+          stickyDurationHours TEXT,
+          FOREIGN KEY (packageId) REFERENCES packages(id) ON DELETE CASCADE
+        )
+      ''');
 
     //- three screen-------------------------------------------
     batch.execute('''

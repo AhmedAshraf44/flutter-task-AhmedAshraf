@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/utils/service_locator.dart';
+import '../../data/repo/home_repo_imple.dart';
 import '../manger/home_cubit/home_cubit.dart';
 import 'widget/home_view_body.dart';
 
@@ -9,7 +11,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => HomeCubit()..loadHomeData(),
+      create: (context) => HomeCubit(getIt.get<HomeRepoImpl>())..loadHomeData(),
       child: SafeArea(
         child: Column(children: [Expanded(child: HomeViewBody())]),
       ),

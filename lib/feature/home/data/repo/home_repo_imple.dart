@@ -7,7 +7,8 @@ import '../models/product_model.dart';
 import 'home_repo.dart';
 
 class HomeRepoImpl implements HomeRepo {
-  final HomeDao _dao = HomeDao();
+  HomeRepoImpl(this._dao);
+  final HomeDao _dao;
   Future<bool> _isTableEmpty(String tableName) async {
     final db = await AppDatabase.database;
     final count = Sqflite.firstIntValue(
@@ -45,4 +46,10 @@ class HomeRepoImpl implements HomeRepo {
 
   @override
   Future<List<ProductModel>> getProducts() async => await _dao.getAllProducts();
+
+  @override
+  Future<void> updateFavoriteStatus(ProductModel product) async {
+    final newValue = !product.isFavorite;
+    await _dao.updateFavoriteStatus(product.id!, newValue);
+  }
 }

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_task/core/color/app_colors.dart';
 import 'package:flutter_task/core/utils/widgets/build_button.dart';
-import 'package:flutter_task/feature/filtering/presentation/manger/filter_cubit/filter_cubit.dart';
-import 'package:flutter_task/feature/filtering/presentation/view/widgets/build_app_bar_filtering.dart';
-import 'package:flutter_task/feature/filtering/presentation/view/widgets/range_input_section.dart';
+import 'package:flutter_task/feature/filter/presentation/manger/filter_cubit/filter_cubit.dart';
+import 'package:flutter_task/feature/filter/presentation/view/widgets/build_app_bar_filtering.dart';
+import 'package:flutter_task/feature/filter/presentation/view/widgets/range_input_section.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../../core/routers/app_routes.dart';
@@ -13,8 +13,8 @@ import '../../../data/model/filter_option.dart';
 import 'build_category_and_location_info.dart';
 import 'filter_chip_widget.dart';
 
-class FilteringViewBody extends StatelessWidget {
-  const FilteringViewBody({super.key});
+class FilterViewBody extends StatelessWidget {
+  const FilterViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +65,7 @@ class FilteringViewBody extends StatelessWidget {
                 BuildButton(
                   title: 'شاهد +10,000 نتائج',
                   onTap: () =>
-                      GoRouter.of(context).push(AppRouter.kProfileView),
+                      GoRouter.of(context).push(AppRouter.kPackageView),
                 ),
                 const SizedBox(height: 16),
               ],

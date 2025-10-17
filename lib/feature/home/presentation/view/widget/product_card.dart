@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-
 import '../../../../../core/color/app_colors.dart';
 import '../../../data/models/product_model.dart';
 import 'bottom_action_row.dart';
@@ -14,9 +12,6 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final price = NumberFormat('#,###').format(item.price);
-    final oldPrice = NumberFormat('#,###').format(item.oldPrice);
-
     return Container(
       decoration: BoxDecoration(
         color: AppColors.kTextWhite,
@@ -36,7 +31,7 @@ class ProductCard extends StatelessWidget {
               children: [
                 ProductTitleRow(title: item.name),
                 const SizedBox(height: 4),
-                PriceAndFavoriteRow(price: price, oldPrice: oldPrice),
+                PriceAndFavoriteRow(product: item),
                 const SizedBox(height: 8),
                 SalesInfoRow(),
                 const SizedBox(height: 31),

@@ -6,4 +6,5 @@ abstract class HomeRepo {
   Future<List<CategoryModel>> getCategories();
   Future<List<CategoryModel>> getSelections();
   Future<List<ProductModel>> getProducts();
+  Future<void> updateFavoriteStatus(ProductModel product);
 }

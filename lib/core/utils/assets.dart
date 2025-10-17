@@ -10,6 +10,14 @@ class Assets {
   /// assets/images/arrow_back.png
   static const String imagesArrowBack = "assets/images/arrow_back.png";
 
+  /// Assets for imagesArrowBackButton
+  /// assets/images/arrow_back_button.png
+  static const String imagesArrowBackButton = "assets/images/arrow_back_button.png";
+
+  /// Assets for imagesCloseSmall
+  /// assets/images/close_small.png
+  static const String imagesCloseSmall = "assets/images/close_small.png";
+
   /// Assets for imagesGlobe
   /// assets/images/globe.png
   static const String imagesGlobe = "assets/images/globe.png";

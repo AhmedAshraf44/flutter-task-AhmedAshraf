@@ -5,8 +5,11 @@ import 'core/function/get_theme.dart';
 import 'core/routers/app_routes.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
+import 'core/utils/service_locator.dart';
+
 void main() {
-  Bloc.observer = MyBlocObserver();
+  setupServiceLocator();
+  Bloc.observer = SimpleBlocObserver();
   runApp(const FlutterTaskApp());
 }
 

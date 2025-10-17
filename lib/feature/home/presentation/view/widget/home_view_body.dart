@@ -20,12 +20,13 @@ class HomeViewBody extends StatelessWidget {
           return const Center(child: CircularProgressIndicator());
         } else if (state is HomeSucessState) {
           return CustomScrollView(
+            physics: BouncingScrollPhysics(),
             slivers: [
               SliverToBoxAdapter(child: SizedBox(height: 47)),
               SliverToBoxAdapter(
                 child: BuildAppBarHome(
                   onTap: () {
-                    GoRouter.of(context).push(AppRouter.kFilteringView);
+                    GoRouter.of(context).push(AppRouter.kPackageView);
                   },
                 ),
               ),

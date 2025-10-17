@@ -61,7 +61,7 @@ class HomeDao {
         'price': p.price.toString(),
         'oldPrice': p.oldPrice.toString(),
         'sales': '',
-        'isFavorite': 0,
+        'isFavorite': p.isFavorite ? 1 : 0,
       }, conflictAlgorithm: ConflictAlgorithm.replace);
     }
     await batch.commit();
@@ -72,11 +72,23 @@ class HomeDao {
     final result = await db.query('Products');
     return result.map((e) {
       return ProductModel(
+        id: e['id'] as int,
         imageUrl: e['image'] as String,
         name: e['title'] as String,
         price: double.tryParse(e['price'].toString()) ?? 0,
         oldPrice: double.tryParse(e['oldPrice'].toString()) ?? 0,
+        isFavorite: e['isFavorite'] == 1,
       );
     }).toList();
+  }
+
+  Future<int> updateFavoriteStatus(int id, bool newValue) async {
+    final db = await AppDatabase.database;
+    return await db.update(
+      'Products',
+      {'isFavorite': newValue ? 1 : 0},
+      where: 'id = ?',
+      whereArgs: [id],
+    );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_task/feature/filtering/presentation/view/widgets/build_number_field.dart';
+import 'package:flutter_task/feature/filter/presentation/view/widgets/build_number_field.dart';
 import '../../../../../core/style/app_styles.dart';
 
 class RangeInputSection extends StatelessWidget {

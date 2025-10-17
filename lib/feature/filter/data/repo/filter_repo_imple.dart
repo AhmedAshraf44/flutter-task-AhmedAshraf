@@ -1,12 +1,12 @@
-import 'package:flutter_task/feature/filtering/data/repo/filter_repo.dart';
+import 'package:flutter_task/feature/filter/data/repo/filter_repo.dart';
 import 'package:sqflite/sqflite.dart';
 import '../../../../core/database/app_database.dart';
 import '../../../../core/database/dao/filter_dao.dart';
 import '../model/filter_option.dart';
 
 class FilterRepoImple implements FilterRepo {
-  final FilterDao _dao = FilterDao();
-
+  FilterRepoImple(this._dao);
+  final FilterDao _dao;
   Future<bool> _isTableEmpty(String tableName) async {
     final db = await AppDatabase.database;
     final count = Sqflite.firstIntValue(

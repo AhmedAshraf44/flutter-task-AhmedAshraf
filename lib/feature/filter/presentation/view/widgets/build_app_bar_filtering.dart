@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task/core/utils/assets.dart';
 
 import '../../../../../core/color/app_colors.dart';
 import '../../../../../core/style/app_styles.dart';
@@ -14,12 +15,15 @@ class BuildAppBarFiltering extends StatelessWidget {
         children: [
           Row(
             children: [
-              IconButton(
-                onPressed: () => Navigator.pop(context),
-                icon: Icon(
-                  Icons.close_rounded,
-                  color: AppColors.kTextPrimary,
-                  size: 22,
+              InkWell(
+                onTap: () => Navigator.pop(context),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 12),
+                  child: Image.asset(
+                    Assets.imagesCloseSmall,
+                    height: 24,
+                    width: 24,
+                  ),
                 ),
               ),
               // const SizedBox(width: 12),

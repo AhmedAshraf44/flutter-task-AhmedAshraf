@@ -1,6 +1,5 @@
 part of 'filter_cubit.dart';
 
-@immutable
 sealed class FilterState {}
 
 final class FilterInitialState extends FilterState {}

@@ -1,16 +1,17 @@
 import 'package:bloc/bloc.dart';
-import 'package:flutter_task/feature/filtering/data/repo/filter_repo_imple.dart';
-import 'package:meta/meta.dart';
+import 'package:flutter_task/feature/filter/data/repo/filter_repo_imple.dart';
 
 import '../../../data/model/filter_option.dart';
 
 part 'filter_state.dart';
 
 class FilterCubit extends Cubit<FilterState> {
-  FilterCubit() : super(FilterInitialState());
-  final FilterRepoImple _repo = FilterRepoImple();
-  Future<void> loadFilters() async {
-    emit(FilterLoadingState());
+  FilterCubit(this._repo) : super(FilterInitialState());
+  final FilterRepoImple _repo;
+  Future<void> loadFilters({bool isloading = true}) async {
+    if (isloading) {
+      emit(FilterLoadingState());
+    }
     try {
       await _repo.seedData();
       final filters = await _repo.getAllFilters();
@@ -28,7 +29,7 @@ class FilterCubit extends Cubit<FilterState> {
   Future<void> updateFilter(FilterOption filter) async {
     try {
       await _repo.updateFilter(filter);
-      await loadFilters();
+      await loadFilters(isloading: false);
     } catch (e) {
       emit(FilterFailureState(e.toString()));
     }

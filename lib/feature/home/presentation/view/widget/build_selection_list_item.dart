@@ -13,8 +13,8 @@ class BuildSelectionListItem extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 80,
-          height: 65,
+          width: 85,
+          height: 78,
           decoration: BoxDecoration(
             color: Colors.grey.shade100,
             borderRadius: BorderRadius.circular(4),

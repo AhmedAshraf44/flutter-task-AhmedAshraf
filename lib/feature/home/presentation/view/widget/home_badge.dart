@@ -8,13 +8,14 @@ class HomeBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 45,
+      height: 40,
       child: Stack(
+        clipBehavior: Clip.none,
         alignment: Alignment.bottomCenter,
         children: [
           Positioned(
-            right: 0,
-            top: 4,
+            right: -2,
+            top: 1,
             child: Container(
               height: 15,
               width: 15,
@@ -22,13 +23,13 @@ class HomeBadge extends StatelessWidget {
                 color: Color(0xff0062E2),
                 shape: BoxShape.circle,
               ),
-              child: const Icon(Icons.check, color: Colors.white, size: 12),
+              child: const Icon(Icons.check, color: Colors.white, size: 14),
             ),
           ),
           CircleAvatar(
             backgroundColor: const Color(0xff0062E2).withValues(alpha: 0.1),
             radius: 18,
-            child: Image.asset(Assets.imagesIconHome, width: 16, height: 16),
+            child: Image.asset(Assets.imagesIconHome, width: 18, height: 18),
           ),
         ],
       ),

@@ -43,7 +43,7 @@ class FilterOption {
     ),
     FilterOption(
       title: 'عدد الغرف',
-      values: ['الكل', 'غرفتين', '3 غرف', '4 غرف', '5 غرف+'],
+      values: ['4 غرف', '5 غرف+', 'الكل', 'غرفتين', '3 غرف'],
       selectedValue: 'الكل',
     ),
     FilterOption(
@@ -53,7 +53,7 @@ class FilterOption {
     ),
     FilterOption(
       title: 'حالة العقار',
-      values: ['أي', 'جاهز', 'قيد الإنشاء'],
+      values: ['أي', 'جاهز', 'قيد الأنشاء'],
       selectedValue: 'أي',
     ),
   ];

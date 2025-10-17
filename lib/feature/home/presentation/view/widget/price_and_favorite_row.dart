@@ -38,6 +38,12 @@ class PriceAndFavoriteRow extends StatelessWidget {
                   decorationColor: AppColors.kTextBlack.withValues(alpha: 0.5),
                 ),
               ),
+              Text(
+                '...',
+                style: AppStyles.textStyle14Medium.copyWith(
+                  color: const Color(0xffFF4144).withValues(alpha: 0.5),
+                ),
+              ),
             ],
           ),
         ),
@@ -48,7 +54,9 @@ class PriceAndFavoriteRow extends StatelessWidget {
           },
           child: Icon(
             product.isFavorite ? Icons.favorite : Icons.favorite_border,
-            color: product.isFavorite ? Colors.red : AppColors.kTextPrimary,
+            color: product.isFavorite
+                ? Color(0xffFF4144)
+                : AppColors.kTextPrimary,
             size: 24,
           ),
         ),

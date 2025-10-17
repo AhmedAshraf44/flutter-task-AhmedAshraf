@@ -42,7 +42,7 @@ class PackageModel {
     ),
     PackageModel(
       id: 2,
-      name: 'إكسترا',
+      name: 'أكسترا',
       price: 3000,
 
       features: [

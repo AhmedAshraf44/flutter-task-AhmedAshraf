@@ -30,7 +30,7 @@ class ProductCard extends StatelessWidget {
             child: Column(
               children: [
                 ProductTitleRow(title: item.name),
-                const SizedBox(height: 4),
+                const SizedBox(height: 8),
                 PriceAndFavoriteRow(product: item),
                 const SizedBox(height: 8),
                 SalesInfoRow(),

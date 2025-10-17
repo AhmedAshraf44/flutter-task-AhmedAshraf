@@ -16,7 +16,7 @@ class BuildPackageFeaturesList extends StatelessWidget {
         children: List.generate(
           features.length,
           (index) => Padding(
-            padding: const EdgeInsets.only(bottom: 6, top: 6),
+            padding: const EdgeInsets.only(bottom: 0, top: 6),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

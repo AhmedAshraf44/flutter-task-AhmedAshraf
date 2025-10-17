@@ -10,13 +10,14 @@ class SalesInfoRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image.asset(Assets.imagesLocalFireDepartment, width: 12, height: 12),
+        Image.asset(Assets.imagesLocalFireDepartment, width: 13, height: 13),
         const SizedBox(width: 4),
         Text(
           'تم بيع 3.3k+',
           style: AppStyles.textStyle12Regular.copyWith(
-            color: AppColors.kTextPrimary,
+            color: AppColors.kTextPrimary.withValues(alpha: 0.5),
           ),
         ),
       ],

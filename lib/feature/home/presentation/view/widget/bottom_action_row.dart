@@ -12,12 +12,15 @@ class BottomActionRow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const HomeBadge(),
+        Padding(
+          padding: const EdgeInsets.only(right: 2),
+          child: const HomeBadge(),
+        ),
         Row(
           children: [
             AddToCartButton(),
-            const SizedBox(width: 20),
-            Image.asset(Assets.imagesTmgHolding, width: 15, height: 22),
+            const SizedBox(width: 15),
+            Image.asset(Assets.imagesTmgHolding, width: 18, height: 25),
           ],
         ),
       ],

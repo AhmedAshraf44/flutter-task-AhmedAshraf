@@ -63,7 +63,7 @@ class FilterViewBody extends StatelessWidget {
                 ),
                 const SizedBox(height: 78),
                 BuildButton(
-                  title: 'شاهد +10,000 نتائج',
+                  title: 'شاهد 10,000+ نتائج',
                   onTap: () =>
                       GoRouter.of(context).push(AppRouter.kPackageView),
                 ),

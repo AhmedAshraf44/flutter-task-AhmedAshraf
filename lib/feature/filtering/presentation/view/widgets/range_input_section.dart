@@ -22,43 +22,40 @@ class RangeInputSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-      child: Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(8),
-        ),
-        padding: const EdgeInsets.all(12),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              title,
-              style: AppStyles.textStyle16Medium.copyWith(
-                color: Colors.black.withValues(alpha: 0.5),
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(8),
+      ),
+      padding: const EdgeInsets.all(12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            title,
+            style: AppStyles.textStyle16Medium.copyWith(
+              color: Colors.black.withValues(alpha: 0.5),
+            ),
+          ),
+          const SizedBox(height: 12),
+          Row(
+            children: [
+              Expanded(
+                child: BuildNumberField(
+                  controller: minController,
+                  hintText: showHint ? minHint : '',
+                ),
               ),
-            ),
-            const SizedBox(height: 12),
-            Row(
-              children: [
-                Expanded(
-                  child: BuildNumberField(
-                    controller: minController,
-                    hintText: showHint ? minHint : '',
-                  ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: BuildNumberField(
+                  controller: maxController,
+                  hintText: showHint ? maxHint : '',
                 ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: BuildNumberField(
-                    controller: maxController,
-                    hintText: showHint ? maxHint : '',
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

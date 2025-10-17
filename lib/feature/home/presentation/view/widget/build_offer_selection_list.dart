@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../core/style/app_styles.dart';
 import '../../../data/models/category_model.dart';
+import 'build_selection_list_item.dart';
 
 class BuildOfferSelectionList extends StatelessWidget {
-  const BuildOfferSelectionList({super.key});
-
+  const BuildOfferSelectionList({super.key, required this.selections});
+  final List<CategoryModel> selections;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -13,41 +12,13 @@ class BuildOfferSelectionList extends StatelessWidget {
       child: ListView.separated(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         scrollDirection: Axis.horizontal,
-        itemCount: CategoryModel.itemSelect.length,
+        itemCount: selections.length,
         separatorBuilder: (_, __) => const SizedBox(width: 10),
         itemBuilder: (context, index) {
-          final product = CategoryModel.itemSelect[index];
+          final product = selections[index];
           return BuildSelectionListItem(product: product);
         },
       ),
-    );
-  }
-}
-
-class BuildSelectionListItem extends StatelessWidget {
-  const BuildSelectionListItem({super.key, required this.product});
-
-  final CategoryModel product;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          width: 80,
-          height: 65,
-          decoration: BoxDecoration(
-            color: Colors.grey.shade100,
-            borderRadius: BorderRadius.circular(4),
-            image: DecorationImage(
-              image: AssetImage(product.image ?? ''),
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),
-        const SizedBox(height: 8),
-        Text(product.name, style: AppStyles.textStyle12Regular),
-      ],
     );
   }
 }

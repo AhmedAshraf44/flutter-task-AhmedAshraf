@@ -5,8 +5,8 @@ import '../../../../../core/style/app_styles.dart';
 import '../../../data/models/category_model.dart';
 
 class BuildOfferCategoryList extends StatefulWidget {
-  const BuildOfferCategoryList({super.key});
-
+  const BuildOfferCategoryList({super.key, required this.categories});
+  final List<CategoryModel> categories;
   @override
   State<BuildOfferCategoryList> createState() => _BuildOfferCategoryListState();
 }
@@ -21,10 +21,10 @@ class _BuildOfferCategoryListState extends State<BuildOfferCategoryList> {
       child: ListView.separated(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         scrollDirection: Axis.horizontal,
-        itemCount: CategoryModel.categories.length,
+        itemCount: widget.categories.length,
         separatorBuilder: (_, __) => const SizedBox(width: 8),
         itemBuilder: (context, index) {
-          final category = CategoryModel.categories[index];
+          final category = widget.categories[index];
           final isSelected = selectedIndex == index;
 
           return GestureDetector(

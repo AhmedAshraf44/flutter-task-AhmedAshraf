@@ -59,7 +59,7 @@ class ProductModel {
     ProductModel(
       imageUrl: Assets.imagesProduct2,
       name: 'جاكيت من الصوف مناسب',
-      price: 32000000,
+      price: 110,
       oldPrice: 60.0,
     ),
   ];

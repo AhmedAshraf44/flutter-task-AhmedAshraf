@@ -1,14 +1,7 @@
-# kartngo_task
+# IT Legend Task
 
-📱 Flutter Task Project – AI-Led Development Evaluation
-This project was developed as part of a Flutter evaluation task that focuses on:
-
-- Reproducing a target mobile app screen pixel-perfectly.
-- Guiding an AI assistant (ProxyAI) to implement features.
-- Using Bloc pattern and MVVM architecture for clean code separation.
-Loading real/mock data from a local SQLite database.
-- Maintaining clean, organized, and testable code structure.
-- Demonstrating AI-led coding via clearly defined prompts.
+📱 Flutter Task Project
+This project was developed as part of a technical evaluation task for IT Legend, aimed at assessing my Flutter development skills and overall readiness for the position.
 
 ## Getting Started
 
@@ -36,7 +29,7 @@ Let me know if you need anything else.
 
 - **Repository Pattern**: Used to handle data access and business logic separation.
 
-- Clean Code Practices: Structured, modular, and maintainable codebase following best practices.
+- **Clean Code Practices**: Structured, modular, and maintainable codebase following best practices.
 
 - Navigation: Managed using a dedicated **`router`** for consistent and scalable navigation flow.
 
@@ -51,6 +44,9 @@ Let me know if you need anything else.
   <img src="assets/images/screenshot/Home.jpg" width="200"/>
   <img src="assets/images/screenshot/Package.jpg" width="200"/>
   <img src="assets/images/screenshot/Filter.jpg" width="200"/>
+</p>
+
+<p align="center">
   <img src="assets/images/screenshot/Home2.jpg" width="200"/>
   <img src="assets/images/screenshot/Package2.jpg" width="200"/>
   <img src="assets/images/screenshot/Filter2.jpg" width="200"/>

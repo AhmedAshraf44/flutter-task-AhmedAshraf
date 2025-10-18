@@ -26,7 +26,11 @@ class BuildAppBarHome extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width: 8),
-                Image.asset(Assets.imagesArrowBack, height: 28, width: 28),
+                Image.asset(
+                  Assets.imagesHomeImageArrowBack,
+                  height: 28,
+                  width: 28,
+                ),
               ],
             ),
           ),

@@ -13,7 +13,11 @@ class BuildLocationSection extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Row(
         children: [
-          Image.asset(Assets.imagesLocationOn, width: 25, height: 25),
+          Image.asset(
+            Assets.imagesFilterImageLocationOn,
+            width: 25,
+            height: 25,
+          ),
           const SizedBox(width: 16),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,

@@ -48,7 +48,7 @@ class FilterOption {
     ),
     FilterOption(
       title: 'طريقة الدفع',
-      values: ['أي', 'كاش', 'تقسيط'],
+      values: ['أي', 'تقسيط', 'كاش'],
       selectedValue: 'أي',
     ),
     FilterOption(

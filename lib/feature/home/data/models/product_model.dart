@@ -20,7 +20,7 @@ class ProductModel {
   static List<ProductModel> productsList = [
     ProductModel(
       id: 1,
-      imageUrl: Assets.imagesProduct1,
+      imageUrl: Assets.imagesHomeImageProduct1,
       name: 'جاكيت من الصوف مناسب',
       price: 32000000,
       oldPrice: 60.0,
@@ -28,7 +28,7 @@ class ProductModel {
     ),
     ProductModel(
       id: 2,
-      imageUrl: Assets.imagesProduct2,
+      imageUrl: Assets.imagesHomeImageProduct2,
       name: 'جاكيت من الصوف مناسب ',
       price: 32000000,
       oldPrice: 60.0,
@@ -36,7 +36,7 @@ class ProductModel {
     ),
     ProductModel(
       id: 3,
-      imageUrl: Assets.imagesProduct3,
+      imageUrl: Assets.imagesHomeImageProduct3,
       name: 'جاكيت من الصوف مناسب',
       price: 32000000,
       oldPrice: 60.0,
@@ -44,7 +44,7 @@ class ProductModel {
     ),
     ProductModel(
       id: 4,
-      imageUrl: Assets.imagesProduct1,
+      imageUrl: Assets.imagesHomeImageProduct1,
       name: 'جاكيت من الصوف مناسب ',
       price: 32000000,
       oldPrice: 60.0,
@@ -52,7 +52,7 @@ class ProductModel {
     ),
     ProductModel(
       id: 5,
-      imageUrl: Assets.imagesProduct3,
+      imageUrl: Assets.imagesHomeImageProduct3,
       name: 'جاكيت من الصوف مناسب',
       price: 32000000,
       oldPrice: 60.0,
@@ -60,7 +60,7 @@ class ProductModel {
     ),
     ProductModel(
       id: 6,
-      imageUrl: Assets.imagesProduct1,
+      imageUrl: Assets.imagesHomeImageProduct1,
       name: 'جاكيت من الصوف مناسب ',
       price: 32000000,
       oldPrice: 60.0,
@@ -68,7 +68,7 @@ class ProductModel {
     ),
     ProductModel(
       id: 7,
-      imageUrl: Assets.imagesProduct1,
+      imageUrl: Assets.imagesHomeImageProduct1,
       name: 'جاكيت من الصوف مناسب',
       price: 32000000,
       oldPrice: 60.0,
@@ -76,7 +76,7 @@ class ProductModel {
     ),
     ProductModel(
       id: 8,
-      imageUrl: Assets.imagesProduct2,
+      imageUrl: Assets.imagesHomeImageProduct2,
       name: 'جاكيت من الصوف مناسب',
       price: 32000000,
       oldPrice: 60.0,

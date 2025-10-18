@@ -42,7 +42,7 @@ class BuildButton extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(right: 4),
                       child: Image.asset(
-                        Assets.imagesArrowBackButton,
+                        Assets.imagesPackageImageArrowBackButton,
                         height: 24,
                         width: 24,
                       ),

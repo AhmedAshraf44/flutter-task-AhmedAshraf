@@ -20,7 +20,7 @@ class ProductTitleRow extends StatelessWidget {
           ),
         ),
         const SizedBox(width: 4),
-        Image.asset(Assets.imagesOffer, width: 20, height: 20),
+        Image.asset(Assets.imagesHomeImageOffer, width: 20, height: 20),
       ],
     );
   }

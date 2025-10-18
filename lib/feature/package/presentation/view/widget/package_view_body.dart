@@ -21,7 +21,7 @@ class PackageViewBody extends StatelessWidget {
         } else if (state is PackageSuccessState) {
           final packages = state.packages;
           return CustomScrollView(
-            physics: BouncingScrollPhysics(),
+            //  physics: BouncingScrollPhysics(),
             slivers: [
               SliverToBoxAdapter(child: SizedBox(height: 16)),
               SliverToBoxAdapter(child: BuildHeaderSection()),

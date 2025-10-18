@@ -20,7 +20,11 @@ class BottomActionRow extends StatelessWidget {
           children: [
             AddToCartButton(),
             const SizedBox(width: 15),
-            Image.asset(Assets.imagesTmgHolding, width: 18, height: 25),
+            Image.asset(
+              Assets.imagesHomeImageTmgHolding,
+              width: 18,
+              height: 25,
+            ),
           ],
         ),
       ],

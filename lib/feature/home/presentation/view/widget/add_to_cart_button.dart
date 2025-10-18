@@ -15,7 +15,11 @@ class AddToCartButton extends StatelessWidget {
         border: Border.all(color: AppColors.kTextBlack.withValues(alpha: 0.1)),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-      child: Image.asset(Assets.imagesShoppingCart, width: 19, height: 19),
+      child: Image.asset(
+        Assets.imagesHomeImageShoppingCart,
+        width: 19,
+        height: 19,
+      ),
     );
   }
 }

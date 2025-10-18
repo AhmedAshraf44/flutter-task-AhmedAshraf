@@ -9,7 +9,7 @@ class AppDatabase {
 
     _db = await openDatabase(
       'AppData.db',
-      version: 4,
+      version: 5,
       onCreate: (db, version) async {
         log("Creating tables...");
         await _createTables(db);

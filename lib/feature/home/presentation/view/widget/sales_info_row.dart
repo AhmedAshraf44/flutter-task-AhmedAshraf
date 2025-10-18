@@ -12,7 +12,11 @@ class SalesInfoRow extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image.asset(Assets.imagesLocalFireDepartment, width: 13, height: 13),
+        Image.asset(
+          Assets.imagesHomeImageLocalFireDepartment,
+          width: 13,
+          height: 13,
+        ),
         const SizedBox(width: 4),
         Text(
           'تم بيع 3.3k+',

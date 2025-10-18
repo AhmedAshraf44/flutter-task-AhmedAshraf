@@ -29,7 +29,11 @@ class HomeBadge extends StatelessWidget {
           CircleAvatar(
             backgroundColor: const Color(0xff0062E2).withValues(alpha: 0.1),
             radius: 18,
-            child: Image.asset(Assets.imagesIconHome, width: 18, height: 18),
+            child: Image.asset(
+              Assets.imagesHomeImageIconHome,
+              width: 18,
+              height: 18,
+            ),
           ),
         ],
       ),

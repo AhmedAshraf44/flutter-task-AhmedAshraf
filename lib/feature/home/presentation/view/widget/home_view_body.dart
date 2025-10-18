@@ -20,7 +20,7 @@ class HomeViewBody extends StatelessWidget {
           return const Center(child: CircularProgressIndicator());
         } else if (state is HomeSucessState) {
           return CustomScrollView(
-            physics: BouncingScrollPhysics(),
+            //  physics: BouncingScrollPhysics(),
             slivers: [
               SliverToBoxAdapter(child: SizedBox(height: 47)),
               SliverToBoxAdapter(

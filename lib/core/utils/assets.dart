@@ -2,53 +2,69 @@
 class Assets {
   Assets._();
   
-  /// Assets for imagesAcute
-  /// assets/images/acute.png
-  static const String imagesAcute = "assets/images/acute.png";
+  /// Assets for imagesFilterImageCloseSmall
+  /// assets/images/filter_image/close_small.png
+  static const String imagesFilterImageCloseSmall = "assets/images/filter_image/close_small.png";
 
-  /// Assets for imagesArrowBack
-  /// assets/images/arrow_back.png
-  static const String imagesArrowBack = "assets/images/arrow_back.png";
+  /// Assets for imagesFilterImageLocationOn
+  /// assets/images/filter_image/location_on.png
+  static const String imagesFilterImageLocationOn = "assets/images/filter_image/location_on.png";
 
-  /// Assets for imagesArrowBackButton
-  /// assets/images/arrow_back_button.png
-  static const String imagesArrowBackButton = "assets/images/arrow_back_button.png";
+  /// Assets for imagesFilterImageRealEstate
+  /// assets/images/filter_image/real-estate.png
+  static const String imagesFilterImageRealEstate = "assets/images/filter_image/real-estate.png";
 
-  /// Assets for imagesCloseSmall
-  /// assets/images/close_small.png
-  static const String imagesCloseSmall = "assets/images/close_small.png";
+  /// Assets for imagesHomeImageArrowBack
+  /// assets/images/home_image/arrow_back.png
+  static const String imagesHomeImageArrowBack = "assets/images/home_image/arrow_back.png";
 
-  /// Assets for imagesGlobe
-  /// assets/images/globe.png
-  static const String imagesGlobe = "assets/images/globe.png";
+  /// Assets for imagesHomeImageHours
+  /// assets/images/home_image/hours.png
+  static const String imagesHomeImageHours = "assets/images/home_image/hours.png";
 
-  /// Assets for imagesHours
-  /// assets/images/hours.png
-  static const String imagesHours = "assets/images/hours.png";
+  /// Assets for imagesHomeImageIconHome
+  /// assets/images/home_image/icon_home.png
+  static const String imagesHomeImageIconHome = "assets/images/home_image/icon_home.png";
 
-  /// Assets for imagesIconHome
-  /// assets/images/icon_home.png
-  static const String imagesIconHome = "assets/images/icon_home.png";
+  /// Assets for imagesHomeImageLocalFireDepartment
+  /// assets/images/home_image/local_fire_department.png
+  static const String imagesHomeImageLocalFireDepartment = "assets/images/home_image/local_fire_department.png";
 
-  /// Assets for imagesKeep
-  /// assets/images/keep.png
-  static const String imagesKeep = "assets/images/keep.png";
+  /// Assets for imagesHomeImageMakup
+  /// assets/images/home_image/makup.png
+  static const String imagesHomeImageMakup = "assets/images/home_image/makup.png";
 
-  /// Assets for imagesLocalFireDepartment
-  /// assets/images/local_fire_department.png
-  static const String imagesLocalFireDepartment = "assets/images/local_fire_department.png";
+  /// Assets for imagesHomeImageMen
+  /// assets/images/home_image/men.png
+  static const String imagesHomeImageMen = "assets/images/home_image/men.png";
 
-  /// Assets for imagesLocationOn
-  /// assets/images/location_on.png
-  static const String imagesLocationOn = "assets/images/location_on.png";
+  /// Assets for imagesHomeImageOffer
+  /// assets/images/home_image/offer.png
+  static const String imagesHomeImageOffer = "assets/images/home_image/offer.png";
 
-  /// Assets for imagesMakup
-  /// assets/images/makup.png
-  static const String imagesMakup = "assets/images/makup.png";
+  /// Assets for imagesHomeImagePhone
+  /// assets/images/home_image/Phone.png
+  static const String imagesHomeImagePhone = "assets/images/home_image/Phone.png";
 
-  /// Assets for imagesMen
-  /// assets/images/men.png
-  static const String imagesMen = "assets/images/men.png";
+  /// Assets for imagesHomeImageProduct1
+  /// assets/images/home_image/product1.png
+  static const String imagesHomeImageProduct1 = "assets/images/home_image/product1.png";
+
+  /// Assets for imagesHomeImageProduct2
+  /// assets/images/home_image/product2.png
+  static const String imagesHomeImageProduct2 = "assets/images/home_image/product2.png";
+
+  /// Assets for imagesHomeImageProduct3
+  /// assets/images/home_image/product3.png
+  static const String imagesHomeImageProduct3 = "assets/images/home_image/product3.png";
+
+  /// Assets for imagesHomeImageShoppingCart
+  /// assets/images/home_image/shopping_cart.png
+  static const String imagesHomeImageShoppingCart = "assets/images/home_image/shopping_cart.png";
+
+  /// Assets for imagesHomeImageTmgHolding
+  /// assets/images/home_image/tmg_holding.png
+  static const String imagesHomeImageTmgHolding = "assets/images/home_image/tmg_holding.png";
 
   /// Assets for imagesNavBarAdd
   /// assets/images/nav_bar/add.png
@@ -70,44 +86,28 @@ class Assets {
   /// assets/images/nav_bar/profile.png
   static const String imagesNavBarProfile = "assets/images/nav_bar/profile.png";
 
-  /// Assets for imagesOffer
-  /// assets/images/offer.png
-  static const String imagesOffer = "assets/images/offer.png";
+  /// Assets for imagesPackageImageAcute
+  /// assets/images/package_image/acute.png
+  static const String imagesPackageImageAcute = "assets/images/package_image/acute.png";
 
-  /// Assets for imagesPhone
-  /// assets/images/Phone.png
-  static const String imagesPhone = "assets/images/Phone.png";
+  /// Assets for imagesPackageImageArrowBackButton
+  /// assets/images/package_image/arrow_back_button.png
+  static const String imagesPackageImageArrowBackButton = "assets/images/package_image/arrow_back_button.png";
 
-  /// Assets for imagesProduct1
-  /// assets/images/product1.png
-  static const String imagesProduct1 = "assets/images/product1.png";
+  /// Assets for imagesPackageImageGlobe
+  /// assets/images/package_image/globe.png
+  static const String imagesPackageImageGlobe = "assets/images/package_image/globe.png";
 
-  /// Assets for imagesProduct2
-  /// assets/images/product2.png
-  static const String imagesProduct2 = "assets/images/product2.png";
+  /// Assets for imagesPackageImageKeep
+  /// assets/images/package_image/keep.png
+  static const String imagesPackageImageKeep = "assets/images/package_image/keep.png";
 
-  /// Assets for imagesProduct3
-  /// assets/images/product3.png
-  static const String imagesProduct3 = "assets/images/product3.png";
+  /// Assets for imagesPackageImageRocket
+  /// assets/images/package_image/rocket.png
+  static const String imagesPackageImageRocket = "assets/images/package_image/rocket.png";
 
-  /// Assets for imagesRealEstate
-  /// assets/images/real-estate.png
-  static const String imagesRealEstate = "assets/images/real-estate.png";
-
-  /// Assets for imagesRocket
-  /// assets/images/rocket.png
-  static const String imagesRocket = "assets/images/rocket.png";
-
-  /// Assets for imagesShoppingCart
-  /// assets/images/shopping_cart.png
-  static const String imagesShoppingCart = "assets/images/shopping_cart.png";
-
-  /// Assets for imagesTmgHolding
-  /// assets/images/tmg_holding.png
-  static const String imagesTmgHolding = "assets/images/tmg_holding.png";
-
-  /// Assets for imagesWorkspacePremium
-  /// assets/images/workspace_premium.png
-  static const String imagesWorkspacePremium = "assets/images/workspace_premium.png";
+  /// Assets for imagesPackageImageWorkspacePremium
+  /// assets/images/package_image/workspace_premium.png
+  static const String imagesPackageImageWorkspacePremium = "assets/images/package_image/workspace_premium.png";
 }
 

@@ -33,7 +33,7 @@ class PackageModel {
       features: [
         PackageFeatureModel(
           title: 'صلاحية الأعلان 30 يوم',
-          image: Assets.imagesAcute,
+          image: Assets.imagesPackageImageAcute,
           stickyDurationHours: '',
         ),
       ],
@@ -48,17 +48,17 @@ class PackageModel {
       features: [
         PackageFeatureModel(
           title: 'صلاحية الأعلان 30 يوم',
-          image: Assets.imagesAcute,
+          image: Assets.imagesPackageImageAcute,
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
           title: 'رفع لأعلى القائمة كل 3 أيام',
-          image: Assets.imagesRocket,
+          image: Assets.imagesPackageImageRocket,
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
           title: 'تثبيت فى مقاول صحى',
-          image: Assets.imagesKeep,
+          image: Assets.imagesPackageImageKeep,
           stickyDurationHours: '( خلال ال48 ساعة القادمة )',
         ),
       ],
@@ -75,37 +75,37 @@ class PackageModel {
       features: [
         PackageFeatureModel(
           title: 'صلاحية الأعلان 30 يوم',
-          image: Assets.imagesAcute,
+          image: Assets.imagesPackageImageAcute,
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
           title: 'رفع لأعلى القائمة كل 2 يوم',
-          image: Assets.imagesRocket,
+          image: Assets.imagesPackageImageRocket,
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
           title: 'تثبيت فى مقاول صحى',
-          image: Assets.imagesKeep,
+          image: Assets.imagesPackageImageKeep,
           stickyDurationHours: '( خلال ال48 ساعة القادمة )',
         ),
         PackageFeatureModel(
           title: 'ظهور فى كل محافظات مصر',
-          image: Assets.imagesGlobe,
+          image: Assets.imagesPackageImageGlobe,
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
           title: 'أعلان مميز',
-          image: Assets.imagesWorkspacePremium,
+          image: Assets.imagesPackageImageWorkspacePremium,
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
           title: 'تثبيت فى مقاول صحى فى الجهراء',
-          image: Assets.imagesKeep,
+          image: Assets.imagesPackageImageKeep,
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
           title: 'تثبيت فى مقاول صحى',
-          image: Assets.imagesKeep,
+          image: Assets.imagesPackageImageKeep,
           stickyDurationHours: '( خلال ال48 ساعة القادمة )',
         ),
       ],
@@ -122,37 +122,37 @@ class PackageModel {
       features: [
         PackageFeatureModel(
           title: 'صلاحية الأعلان 30 يوم',
-          image: Assets.imagesAcute,
+          image: Assets.imagesPackageImageAcute,
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
           title: 'رفع لأعلى القائمة كل 2 يوم',
-          image: Assets.imagesRocket,
+          image: Assets.imagesPackageImageRocket,
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
           title: 'تثبيت فى مقاول صحى',
-          image: Assets.imagesKeep,
+          image: Assets.imagesPackageImageKeep,
           stickyDurationHours: '( خلال ال48 ساعة القادمة )',
         ),
         PackageFeatureModel(
           title: 'ظهور فى كل محافظات مصر',
-          image: Assets.imagesGlobe,
+          image: Assets.imagesPackageImageGlobe,
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
           title: 'أعلان مميز',
-          image: Assets.imagesWorkspacePremium,
+          image: Assets.imagesPackageImageWorkspacePremium,
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
           title: 'تثبيت فى مقاول صحى فى الجهراء',
-          image: Assets.imagesKeep,
+          image: Assets.imagesPackageImageKeep,
           stickyDurationHours: '',
         ),
         PackageFeatureModel(
           title: 'تثبيت فى مقاول صحى',
-          image: Assets.imagesKeep,
+          image: Assets.imagesPackageImageKeep,
           stickyDurationHours: '( خلال ال48 ساعة القادمة )',
         ),
       ],

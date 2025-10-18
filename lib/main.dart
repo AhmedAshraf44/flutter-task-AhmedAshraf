@@ -19,6 +19,10 @@ class FlutterTaskApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      title: 'Flutter Task',
+      debugShowCheckedModeBanner: false,
+      routerConfig: AppRouter.router,
+      theme: getTheme(),
       locale: const Locale('ar'),
       supportedLocales: const [Locale('ar')],
       localizationsDelegates: const [
@@ -26,10 +30,6 @@ class FlutterTaskApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      title: 'Flutter Task',
-      debugShowCheckedModeBanner: false,
-      routerConfig: AppRouter.router,
-      theme: getTheme(),
     );
   }
 }

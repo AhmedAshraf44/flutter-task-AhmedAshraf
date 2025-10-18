@@ -27,7 +27,7 @@ class BuildCategorySection extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(right: 8.0),
                 child: Image.asset(
-                  Assets.imagesRealEstate,
+                  Assets.imagesFilterImageRealEstate,
                   width: 25,
                   height: 25,
                 ),

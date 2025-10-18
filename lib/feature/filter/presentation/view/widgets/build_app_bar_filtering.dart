@@ -20,7 +20,7 @@ class BuildAppBarFiltering extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 12),
                   child: Image.asset(
-                    Assets.imagesCloseSmall,
+                    Assets.imagesFilterImageCloseSmall,
                     height: 24,
                     width: 24,
                   ),

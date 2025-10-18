@@ -1,7 +1,7 @@
 # IT Legend Task
 
 📱 **Flutter Task Project**
-This project was developed as part of a technical evaluation task for IT Legend, aimed at assessing my Flutter development skills and overall readiness for the position.
+- This project was developed as part of a technical evaluation task for IT Legend, aimed at assessing my Flutter development skills and overall readiness for the position.
 
 ## Getting Started
 

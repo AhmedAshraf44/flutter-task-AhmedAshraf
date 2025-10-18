@@ -1,6 +1,6 @@
 # IT Legend Task
 
-📱 Flutter Task Project
+📱 **Flutter Task Project**
 This project was developed as part of a technical evaluation task for IT Legend, aimed at assessing my Flutter development skills and overall readiness for the position.
 
 ## Getting Started
@@ -8,9 +8,9 @@ This project was developed as part of a technical evaluation task for IT Legend,
 **[`📦 Download APK & 🎥 Screen Recording`](https://drive.google.com/drive/folders/1AK4rk9vd9VAoY3v2NVbbOZKQCbHiR4Ua?usp=sharing)**
 
 Here is a Google Drive folder that contains:
-✅ A release APK of the application.
-🎥 A screen recording video demonstrating the app functionality.
-✅ The application is fully responsive and works seamlessly across all mobile screen sizes.
+✅ A **release APK** of the application.
+🎥 A **screen recording video** demonstrating the app functionality.
+✅ The application is **fully responsive** and works seamlessly across all mobile screen sizes.
 
 Let me know if you need anything else.
 

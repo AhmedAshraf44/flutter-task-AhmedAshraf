@@ -5,17 +5,20 @@
 
 ## Getting Started
 
-**[`🎥 Screen Recording`](https://drive.google.com/drive/folders/1LdLxUdDlJwHJRXAez8M6CTwlgMpelkYZ?usp=drive_link)**
+**[`📦 Download APK & 🎥 Screen Recording`](https://drive.google.com/drive/folders/1AK4rk9vd9VAoY3v2NVbbOZKQCbHiR4Ua?usp=sharing)**
+
 
 Here is a Google Drive folder that contains:
+- ✅ A **release APK** of the application.
 - 🎥 A **screen recording video** demonstrating the app functionality.
+- ✅ The application is **fully responsive** and works seamlessly across all mobile screen sizes.
 
 Let me know if you need anything else.
 
 
 ### 🧱 Project Architecture & Technical Overview
 
-- Database: **`Hive`** using the hive Flutter package.
+- Database: **`SQLite`** using the sqflite Flutter package.
 
 - State Management: **`Cubit`** (flutter_bloc).
 
